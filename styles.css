@@ -16,9 +16,6 @@ li, a, ul{
     text-decoration: none;
 }
 
-a{
-    
-}
 
 .row{
     width: 100%;
@@ -85,7 +82,7 @@ a{
     padding: 24px;
 }
 
-.nav__link--btn{
+.btn{
     font-size: 20px;
     font-weight: 500;
     border-radius: 25px;
@@ -135,6 +132,8 @@ h1{
 p{
     color: #7C8BA1;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .email{
@@ -214,7 +213,7 @@ h5{
     font-size: 24px;
 }
 
-.features__title{
+.title{
     font-size: 48px;
     color: #243363;
     font-weight: 700;
@@ -232,11 +231,67 @@ h5{
     text-align: center;
 }
 
-.text{
+.text,
+.quality__desc{
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     color: #7C8BA1;
     max-width: 576px;
     margin: 24px 0px 36px 0px;
+}
+
+.offered__services{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1024px;
+}
+
+.service{
+    display: flex;
+    padding: 32px 24px;
+    width: calc(100% / 3);
+}
+
+.service__icon{
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    padding: 1.25rem;
+    border: 1px solid;
+    border-width: 1px;
+    border-radius: 100%;
+    color: rgb(226, 232, 240);
+}
+
+.service__info{
+    margin: 8px 0 0 16px;
+}
+
+.service__header{
+    color: #243363;
+}
+
+.service__desc{
+    margin-top: 16px;
+}
+
+/* Quality */ 
+
+.quality__title{
+    margin-top: 16px;
+}
+
+.dots{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    color: #6415ff;
+    fill: currentcolor;
+    transform: matrix(1, 0, 0, 1, 40, 35);
 }
