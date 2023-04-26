@@ -14,6 +14,7 @@ li, a, ul{
     font-weight: 500;
     list-style: none;
     text-decoration: none;
+    transition: all 300ms ease;
 }
 
 
@@ -89,6 +90,7 @@ li, a, ul{
     padding: 12px 32px;
     background-color: #6415ff;
     color: white;
+     cursor: pointer;
     
 }
 
@@ -231,8 +233,7 @@ h5{
     text-align: center;
 }
 
-.text,
-.quality__desc{
+.text{
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
@@ -280,6 +281,11 @@ h5{
 
 /* Quality */ 
 
+#quality,
+#steps{
+    padding: 0 32px;
+}
+
 .quality__title{
     margin-top: 16px;
 }
@@ -295,3 +301,90 @@ h5{
     fill: currentcolor;
     transform: matrix(1, 0, 0, 1, 40, 35);
 }
+
+.quality__info{
+    width: 50%;
+    margin-right: 32px;
+}
+
+.flex__row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality__img{
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.quality__img--wrap{
+    width: 50%;
+    position: relative;
+}
+
+/* Steps */
+
+.dots__part2{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: -40px;
+    z-index: -1;
+    color: #6415ff;
+    opacity: 0.2;
+    fill: currentColor;
+}
+
+.steps__img--wrap{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__img{
+    width: 100%;
+}
+
+.steps__info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 64px;
+}
+
+.steps__title{
+    margin-bottom: 24px;
+}
+
+.step{
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number{
+    font-size: 40px;
+    color: rgb(203, 213, 224);
+    font-weight: bold;
+}
+
+.step__desc{
+    padding-left: 24px;
+}
+
+.step__sub-header{
+    color: #243363;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.step__para{
+    font-size: 20px;
+}
+
+/* Values */
+
