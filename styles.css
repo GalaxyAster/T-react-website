@@ -388,3 +388,17 @@ h5{
 
 /* Values */
 
+.offers__title{
+    margin-top: 24px;
+}
+
+.offers__img--wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers__img{
+    width: 100%;
+}
