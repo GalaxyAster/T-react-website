@@ -608,3 +608,15 @@ h5{
     transform: translate(1px, 1px);
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15);
 }
+
+.weird__circle3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 256px;
+    width: 256px;
+    transform: translateX(-100px);
+    opacity: 0.25;
+    overflow: hidden;
+    
+}
