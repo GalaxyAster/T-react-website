@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -56,6 +60,25 @@ button{
     position: relative;
 }
 
+.link__hover--effect {
+    position: relative;
+}
+
+.link__hover--effect:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background-color: #6415ff;
+    transition: all 300ms ease;
+}
+
+.link__hover--effect:hover:after {
+    left: 0;
+    width: 100%;
+}
 /* Navigation*/
 
 .nav{
@@ -68,7 +91,8 @@ button{
     color: rgb(36, 62, 99);
     font-size: 20px;
     font-weight: 500;
-    padding: 24px;
+    margin: 0px 24px;
+    transition: all 300ms ease;
 }
 
 .logo{
@@ -89,6 +113,10 @@ button{
     cursor: pointer;
 }
 
+.logo__name:hover{
+    color: #6415ff;
+}
+
 .nav__links{
     display: flex;
     align-items: center;
@@ -99,7 +127,11 @@ button{
     font-size: 20px;
     font-weight: 500;
     margin-left: 12px;
-    padding: 24px;
+    margin: 0px 24px;
+}
+
+.nav__link:hover{
+    color: #6415ff
 }
 
 .btn{
