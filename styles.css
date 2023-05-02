@@ -112,6 +112,9 @@ button{
     border: none;
 }
 
+.btn:hover{
+    background-color: rgb(80 17 204);
+}
 /* Header */
 
 header{
