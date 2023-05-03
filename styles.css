@@ -791,6 +791,7 @@ h5{
 .contact__info{
     display: flex;
     justify-content: space-between;
+    max-width: 968px;
 }
 
 .contact__text{
@@ -948,4 +949,93 @@ footer{
 
 .social:hover{
     background-color: #CBD5E0;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 1.625;
+    }
+
+    .title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .header__info{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .header__img{
+        margin: 0 auto;
+    }
+
+    .header__img{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .offered__services{
+        max-width: 750px;
+    }
+
+    .service{
+        width: 50%;
+    }
+
+    #values{
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .offers{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offer{
+        padding-top: 40px;
+        width: 80%;
+    }
+
+    .pricing__plans {
+        max-width: 400px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+        margin: 32px 0px 32px 0px;
+    }
+
+    .weird__circle3 {
+        transform: translateX(-100px);
+    }
+
+    .contact__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__text {
+        margin-bottom: 16px;
+    }
+
 }
