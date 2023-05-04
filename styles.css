@@ -951,6 +951,41 @@ footer{
     background-color: #CBD5E0;
 }
 
+@media (max-width: 640px){
+    .titlle{
+        text-align: center;
+    }
+
+    .email__btn {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        padding: 24px;
+        display: block;
+    }
+
+    .customer__profile{
+        flex-direction: column;
+    }
+
+    .customer__hale{
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .start__btn {
+        margin: 0px 0px 16px 0px;
+    }
+
+}
+
+@media (max-width: 768px){
+    
+}
+
 @media (max-width: 1024px) {
     h1 {
         font-size: 30px;
