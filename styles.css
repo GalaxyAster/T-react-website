@@ -421,8 +421,7 @@ h5{
 }
 
 .quality__info{
-    width: 50%;
-    margin-right: 32px;
+    width: 100%;
 }
 
 .flex__row{
@@ -576,6 +575,7 @@ h5{
 
 .offers__img{
     width: 100%;
+    max-width: 300px;
 }
 
 /* Pricing */
@@ -1046,43 +1046,114 @@ footer{
     background-color: #CBD5E0;
 }
 
-@media (max-width: 550px){
-    .title{
-        text-align: center;
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
     }
 
-    .email__btn {
-        position: static;
-        width: 100%;
-        max-width: 400px;
-        padding: 24px;
+    .nav__link, .nav__link--login, .nav .btn{
+        display: none;
+    }
+
+    .btn__menu {
         display: block;
     }
 
-    .customer__profile{
+    .column {
+        display: flex;
         flex-direction: column;
     }
 
-    .customer__hale{
-        margin-bottom: 20px;
+    .text {
+        font-size: 16px;
+        line-height: 1.625;
     }
 
-    .buttons {
+    .title {
+        font-size: 36px;
+    }
+
+    .header__info{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .header__img{
+        margin: 0 auto;
+    }
+
+    .header__img{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .offered__services{
+        max-width: 750px;
+    }
+
+    .service{
+        width: 50%;
+    }
+
+    #values{
+        margin-left: 40px;
+        width: 100%;
+    }
+
+    .values__info{
+        width: 50%;
+    }
+
+    .offers{
+        display: flex;
         flex-direction: column;
     }
 
-    .start__btn {
-        margin: 0px 0px 16px 0px;
+    .offer{
+        padding-top: 40px;
+        width: 80%;
+    }
+
+    .offers__img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .pricing__plans {
+        max-width: 400px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+        margin: 32px 0px 32px 0px;
+    }
+
+    .weird__circle3 {
+        transform: translateX(-100px);
+    }
+
+    .contact__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__text {
+        margin-bottom: 16px;
     }
 
 }
 
 @media (max-width: 768px){
-
-    .h5{
-       
-    }
-
     .text{
         text-align: center;
         max-width: 450px;
@@ -1125,7 +1196,7 @@ footer{
     .offers{
         align-items: center;
     }
-    
+
     .offer__header{
         justify-content: center;
     }
@@ -1145,101 +1216,76 @@ footer{
     }
 }
 
+@media (max-width: 560px) {
 
-
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 30px;
-    }
-
-    .nav__link, .nav__link--login, .nav .btn{
-        display: none;
-    }
-
-    .btn__menu {
-        display: block;
-    }
-
-    .column {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text {
-        font-size: 16px;
-        line-height: 1.625;
-    }
-
-    .title {
-        font-size: 36px;
+    .title{
         text-align: center;
-    }
-
-    .header__info{
-        margin: 0 auto;
-        width: 100%;
-        max-width: 400px;
-        text-align: center;
-    }
-
-    .header__img{
-        margin: 0 auto;
-    }
-
-    .header__img{
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 24px;
-    }
-
-    .offered__services{
-        max-width: 750px;
     }
 
     .service{
-        width: 50%;
+        width: 100%;
+    }
+
+    .email__btn {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        padding: 24px;
+        display: block;
     }
 
     #values{
-        margin-left: 40px;
-        width: 100%;
+        margin-left: 0px;
     }
 
-    .offers{
-        display: flex;
-        flex-direction: column;
+    .quality__title{
+        font-size: 26px;
+    }
+
+    .steps__info{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .step__desc{
+        padding-left: 0px;
     }
 
     .offer{
-        padding-top: 40px;
-        width: 80%;
-    }
-
-    .pricing__plans {
-        max-width: 400px;
-        margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .plan {
         width: 100%;
-        margin: 32px 0px 32px 0px;
     }
 
-    .weird__circle3 {
-        transform: translateX(-100px);
+    .test__img--figure{
+        width: 100%;
+        margin-right: 0px;
     }
 
-    .contact__info{
-        display: flex;
+    .customer__profile{
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
-    .contact__text {
-        margin-bottom: 16px;
+    .customer__hale{
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .start__btn {
+        margin: 0px 0px 16px 0px;
+    }
+
+    .contact__text{
+        font-size: 20px;
+    }
+
+    .buttons{
+        width: 200%;
+    }
+
+    .footer__link--list{
+        width: 50%;
     }
 
 }
